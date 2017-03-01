@@ -10,14 +10,13 @@ import java.awt.Insets;
 
 
 public class Tic extends JFrame{
-    int allow = 0;
-	  ImageIcon x = new ImageIcon(this.getClass().getResource("Xtr1.png") );
-	  ImageIcon o = new ImageIcon(this.getClass().getResource("myo1.png") );
+                int allow = 0;
+	        ImageIcon x = new ImageIcon(this.getClass().getResource("Xtr1.png") );
+	        ImageIcon o = new ImageIcon(this.getClass().getResource("myo1.png") );
 		ImageIcon i = new ImageIcon(this.getClass().getResource("img.jpg") );
-
-		 ImageIcon x1 = new ImageIcon(this.getClass().getResource("Xtrnot1.png") );
-		 ImageIcon x2 = new ImageIcon(this.getClass().getResource("Xtrnot2.png") );
-		 ImageIcon x3 = new ImageIcon(this.getClass().getResource("Xtrnot3.png") );
+		ImageIcon x1 = new ImageIcon(this.getClass().getResource("Xtrnot1.png") );
+		ImageIcon x2 = new ImageIcon(this.getClass().getResource("Xtrnot2.png") );
+ 		ImageIcon x3 = new ImageIcon(this.getClass().getResource("Xtrnot3.png") );
 		ImageIcon x4 = new ImageIcon(this.getClass().getResource("Xtrnot4.png") );
 
 		ImageIcon o1 = new ImageIcon(this.getClass().getResource("myonot1.png") );
@@ -25,14 +24,10 @@ public class Tic extends JFrame{
 		ImageIcon o3 = new ImageIcon(this.getClass().getResource("myonot3.png") );
 		ImageIcon o4 = new ImageIcon(this.getClass().getResource("myonot4.png") );
 
-
-
-
-
-int counter;
-	  int v =0;
+                int counter;
+	        int v =0;
 		static char check1 = '*';
-    static char check2 = '*';
+                static char check2 = '*';
 		static char check3 = '*';
 		static char check4 = '*';
 		static char check5 = '*';
@@ -51,55 +46,52 @@ int counter;
 	   JButton b7 = new JButton("");
 	   JButton b8 = new JButton("");
 	   JButton b9 = new JButton("");
-		 JButton play_again = new JButton("AGAIN!");
-		 JButton ex = new JButton("EXIT");
-		 JLabel lab1 = new JLabel("HAPPY PLAYING!");
-		 JTextArea field1 = new JTextArea("X PLAYER");
-		 JTextArea field2 = new JTextArea("Y PLAYER");
-
-
-		 JFrame jf;
+           JButton play_again = new JButton("AGAIN!");
+	   JButton ex = new JButton("EXIT");
+	   JLabel lab1 = new JLabel("HAPPY PLAYING!");
+	   JTextArea field1 = new JTextArea("X PLAYER");
+	   JTextArea field2 = new JTextArea("Y PLAYER");
+           JFrame jf;
+        
 	   public static void main(String[] args) {
 		new Tic();
-	}
+	   }
 
 	   public Tic(){
                      jf = new JFrame("TIC_TAC_TOE");
 		               jf.setSize(300,350);
-									 jf.setLayout(null);
+			       jf.setLayout(null);
 		               jf.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		               jf.setVisible(true);
 		               jf.setLocationRelativeTo(null);
 		               jf.setResizable(false);
-                  jf.getContentPane().setBackground( Color.yellow );
+                               jf.getContentPane().setBackground( Color.yellow );
 
 		               ListenForButton ListenForButton1 = new ListenForButton();
 
-
-									 b1.setIcon(i);
-									 b2.setIcon(i);
-									 b3.setIcon(i);
-									 b4.setIcon(i);
-									 b5.setIcon(i);
-									 b6.setIcon(i);
-									 b7.setIcon(i);
-									 b8.setIcon(i);
-									 b9.setIcon(i);
-
-									 b1.setBounds(60,55,60,60);
-									 b2.setBounds(120,55,60,60);
-									 b3.setBounds(180,55,60,60);
-									 b4.setBounds(60,115,60,60);
-									 b5.setBounds(120,115,60,60);
-									 b6.setBounds(180,115,60,60);
-									 b7.setBounds(60,175,60,60);
-									 b8.setBounds(120,175,60,60);
-									 b9.setBounds(180,175,60,60);
-                   play_again.setBounds(60,265,80,30);
-									 ex.setBounds(160,265,80,30);
-									 lab1.setBounds(104,10,100,30);
-									 field1.setBounds(60,310,180,20);
-									 field2.setBounds(60,340,180,20);
+                  	       b1.setIcon(i);
+			       b2.setIcon(i);
+			       b3.setIcon(i);
+			       b4.setIcon(i);
+			       b5.setIcon(i);
+			       b6.setIcon(i);
+			       b7.setIcon(i);
+			       b8.setIcon(i);
+			       b9.setIcon(i);
+                         b1.setBounds(60,55,60,60);
+			 b2.setBounds(120,55,60,60);
+			 b3.setBounds(180,55,60,60);
+                         b4.setBounds(60,115,60,60);
+			 b5.setBounds(120,115,60,60);
+			 b6.setBounds(180,115,60,60);
+			 b7.setBounds(60,175,60,60);
+			 b8.setBounds(120,175,60,60);
+			 b9.setBounds(180,175,60,60);
+                         play_again.setBounds(60,265,80,30);
+	         	 ex.setBounds(160,265,80,30);
+			 lab1.setBounds(104,10,100,30);
+			 field1.setBounds(60,310,180,20);
+			 field2.setBounds(60,340,180,20);
 
 
 		               b1.addActionListener(ListenForButton1);
@@ -112,7 +104,7 @@ int counter;
 		               b8.addActionListener(ListenForButton1);
 		               b9.addActionListener(ListenForButton1);
                    play_again.addActionListener(ListenForButton1);
-									 ex.addActionListener(ListenForButton1);
+		   ex.addActionListener(ListenForButton1);
 
 		               jf.add(b1);
 									 jf.add(b2);

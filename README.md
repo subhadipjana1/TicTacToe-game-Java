@@ -1,2 +1,2 @@
 # TicTacToe-game-Java
-Try out this game.
+A simple tic-tac-toe game built using java and swing.
